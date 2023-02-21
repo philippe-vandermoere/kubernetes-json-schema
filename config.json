@@ -2,7 +2,7 @@
   {
     "name": "prometheus-operator",
     "urls": [
-      "https://github.com/prometheus-operator/prometheus-operator/releases/download/v0.62.0/stripped-down-crds.yaml"
+      "https://github.com/prometheus-operator/prometheus-operator/releases/download/v0.63.0/stripped-down-crds.yaml"
     ]
   },
   {
@@ -20,7 +20,7 @@
   {
     "name": "fluxcd",
     "urls": [
-      "https://github.com/fluxcd/flux2/releases/download/v0.38.3/install.yaml"
+      "https://github.com/fluxcd/flux2/releases/download/v0.40.0/install.yaml"
     ]
   },
   {
