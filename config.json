@@ -59,7 +59,7 @@
   {
     "name": "kyverno",
     "urls": [
-      "https://raw.githubusercontent.com/kyverno/kyverno/main/config/install.yaml"
+      "https://github.com/kyverno/kyverno/releases/download/v1.9.0/install.yaml"
     ]
   }
 ]
