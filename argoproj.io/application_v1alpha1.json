@@ -347,6 +347,10 @@
                       "description": "NameSuffix is a suffix appended to resources for Kustomize apps",
                       "type": "string"
                     },
+                    "namespace": {
+                      "description": "Namespace sets the namespace that Kustomize adds to all resources",
+                      "type": "string"
+                    },
                     "version": {
                       "description": "Version controls which version of Kustomize to use for rendering manifests",
                       "type": "string"
@@ -651,6 +655,10 @@
                       },
                       "nameSuffix": {
                         "description": "NameSuffix is a suffix appended to resources for Kustomize apps",
+                        "type": "string"
+                      },
+                      "namespace": {
+                        "description": "Namespace sets the namespace that Kustomize adds to all resources",
                         "type": "string"
                       },
                       "version": {
@@ -1099,6 +1107,10 @@
                   "description": "NameSuffix is a suffix appended to resources for Kustomize apps",
                   "type": "string"
                 },
+                "namespace": {
+                  "description": "Namespace sets the namespace that Kustomize adds to all resources",
+                  "type": "string"
+                },
                 "version": {
                   "description": "Version controls which version of Kustomize to use for rendering manifests",
                   "type": "string"
@@ -1403,6 +1415,10 @@
                   },
                   "nameSuffix": {
                     "description": "NameSuffix is a suffix appended to resources for Kustomize apps",
+                    "type": "string"
+                  },
+                  "namespace": {
+                    "description": "Namespace sets the namespace that Kustomize adds to all resources",
                     "type": "string"
                   },
                   "version": {
@@ -1880,6 +1896,10 @@
                         "description": "NameSuffix is a suffix appended to resources for Kustomize apps",
                         "type": "string"
                       },
+                      "namespace": {
+                        "description": "Namespace sets the namespace that Kustomize adds to all resources",
+                        "type": "string"
+                      },
                       "version": {
                         "description": "Version controls which version of Kustomize to use for rendering manifests",
                         "type": "string"
@@ -2184,6 +2204,10 @@
                         },
                         "nameSuffix": {
                           "description": "NameSuffix is a suffix appended to resources for Kustomize apps",
+                          "type": "string"
+                        },
+                        "namespace": {
+                          "description": "Namespace sets the namespace that Kustomize adds to all resources",
                           "type": "string"
                         },
                         "version": {
@@ -2645,6 +2669,10 @@
                               "description": "NameSuffix is a suffix appended to resources for Kustomize apps",
                               "type": "string"
                             },
+                            "namespace": {
+                              "description": "Namespace sets the namespace that Kustomize adds to all resources",
+                              "type": "string"
+                            },
                             "version": {
                               "description": "Version controls which version of Kustomize to use for rendering manifests",
                               "type": "string"
@@ -2949,6 +2977,10 @@
                               },
                               "nameSuffix": {
                                 "description": "NameSuffix is a suffix appended to resources for Kustomize apps",
+                                "type": "string"
+                              },
+                              "namespace": {
+                                "description": "Namespace sets the namespace that Kustomize adds to all resources",
                                 "type": "string"
                               },
                               "version": {
@@ -3387,6 +3419,10 @@
                           "description": "NameSuffix is a suffix appended to resources for Kustomize apps",
                           "type": "string"
                         },
+                        "namespace": {
+                          "description": "Namespace sets the namespace that Kustomize adds to all resources",
+                          "type": "string"
+                        },
                         "version": {
                           "description": "Version controls which version of Kustomize to use for rendering manifests",
                           "type": "string"
@@ -3691,6 +3727,10 @@
                           },
                           "nameSuffix": {
                             "description": "NameSuffix is a suffix appended to resources for Kustomize apps",
+                            "type": "string"
+                          },
+                          "namespace": {
+                            "description": "Namespace sets the namespace that Kustomize adds to all resources",
                             "type": "string"
                           },
                           "version": {
@@ -4137,6 +4177,10 @@
                           "description": "NameSuffix is a suffix appended to resources for Kustomize apps",
                           "type": "string"
                         },
+                        "namespace": {
+                          "description": "Namespace sets the namespace that Kustomize adds to all resources",
+                          "type": "string"
+                        },
                         "version": {
                           "description": "Version controls which version of Kustomize to use for rendering manifests",
                           "type": "string"
@@ -4441,6 +4485,10 @@
                           },
                           "nameSuffix": {
                             "description": "NameSuffix is a suffix appended to resources for Kustomize apps",
+                            "type": "string"
+                          },
+                          "namespace": {
+                            "description": "Namespace sets the namespace that Kustomize adds to all resources",
                             "type": "string"
                           },
                           "version": {

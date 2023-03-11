@@ -351,6 +351,9 @@
                                   "nameSuffix": {
                                     "type": "string"
                                   },
+                                  "namespace": {
+                                    "type": "string"
+                                  },
                                   "version": {
                                     "type": "string"
                                   }
@@ -602,6 +605,9 @@
                                       "type": "string"
                                     },
                                     "nameSuffix": {
+                                      "type": "string"
+                                    },
+                                    "namespace": {
                                       "type": "string"
                                     },
                                     "version": {
@@ -1114,6 +1120,9 @@
                                   "nameSuffix": {
                                     "type": "string"
                                   },
+                                  "namespace": {
+                                    "type": "string"
+                                  },
                                   "version": {
                                     "type": "string"
                                   }
@@ -1365,6 +1374,9 @@
                                       "type": "string"
                                     },
                                     "nameSuffix": {
+                                      "type": "string"
+                                    },
+                                    "namespace": {
                                       "type": "string"
                                     },
                                     "version": {
@@ -1883,6 +1895,9 @@
                                   "nameSuffix": {
                                     "type": "string"
                                   },
+                                  "namespace": {
+                                    "type": "string"
+                                  },
                                   "version": {
                                     "type": "string"
                                   }
@@ -2134,6 +2149,9 @@
                                       "type": "string"
                                     },
                                     "nameSuffix": {
+                                      "type": "string"
+                                    },
+                                    "namespace": {
                                       "type": "string"
                                     },
                                     "version": {
@@ -2610,6 +2628,9 @@
                                   "nameSuffix": {
                                     "type": "string"
                                   },
+                                  "namespace": {
+                                    "type": "string"
+                                  },
                                   "version": {
                                     "type": "string"
                                   }
@@ -2861,6 +2882,9 @@
                                       "type": "string"
                                     },
                                     "nameSuffix": {
+                                      "type": "string"
+                                    },
+                                    "namespace": {
                                       "type": "string"
                                     },
                                     "version": {
@@ -3382,6 +3406,9 @@
                                             "nameSuffix": {
                                               "type": "string"
                                             },
+                                            "namespace": {
+                                              "type": "string"
+                                            },
                                             "version": {
                                               "type": "string"
                                             }
@@ -3633,6 +3660,9 @@
                                                 "type": "string"
                                               },
                                               "nameSuffix": {
+                                                "type": "string"
+                                              },
+                                              "namespace": {
                                                 "type": "string"
                                               },
                                               "version": {
@@ -4145,6 +4175,9 @@
                                             "nameSuffix": {
                                               "type": "string"
                                             },
+                                            "namespace": {
+                                              "type": "string"
+                                            },
                                             "version": {
                                               "type": "string"
                                             }
@@ -4396,6 +4429,9 @@
                                                 "type": "string"
                                               },
                                               "nameSuffix": {
+                                                "type": "string"
+                                              },
+                                              "namespace": {
                                                 "type": "string"
                                               },
                                               "version": {
@@ -4914,6 +4950,9 @@
                                             "nameSuffix": {
                                               "type": "string"
                                             },
+                                            "namespace": {
+                                              "type": "string"
+                                            },
                                             "version": {
                                               "type": "string"
                                             }
@@ -5165,6 +5204,9 @@
                                                 "type": "string"
                                               },
                                               "nameSuffix": {
+                                                "type": "string"
+                                              },
+                                              "namespace": {
                                                 "type": "string"
                                               },
                                               "version": {
@@ -5641,6 +5683,9 @@
                                             "nameSuffix": {
                                               "type": "string"
                                             },
+                                            "namespace": {
+                                              "type": "string"
+                                            },
                                             "version": {
                                               "type": "string"
                                             }
@@ -5892,6 +5937,9 @@
                                                 "type": "string"
                                               },
                                               "nameSuffix": {
+                                                "type": "string"
+                                              },
+                                              "namespace": {
                                                 "type": "string"
                                               },
                                               "version": {
@@ -6555,6 +6603,9 @@
                                             "nameSuffix": {
                                               "type": "string"
                                             },
+                                            "namespace": {
+                                              "type": "string"
+                                            },
                                             "version": {
                                               "type": "string"
                                             }
@@ -6806,6 +6857,9 @@
                                                 "type": "string"
                                               },
                                               "nameSuffix": {
+                                                "type": "string"
+                                              },
+                                              "namespace": {
                                                 "type": "string"
                                               },
                                               "version": {
@@ -7544,6 +7598,9 @@
                                             "nameSuffix": {
                                               "type": "string"
                                             },
+                                            "namespace": {
+                                              "type": "string"
+                                            },
                                             "version": {
                                               "type": "string"
                                             }
@@ -7795,6 +7852,9 @@
                                                 "type": "string"
                                               },
                                               "nameSuffix": {
+                                                "type": "string"
+                                              },
+                                              "namespace": {
                                                 "type": "string"
                                               },
                                               "version": {
@@ -8302,6 +8362,9 @@
                                   "nameSuffix": {
                                     "type": "string"
                                   },
+                                  "namespace": {
+                                    "type": "string"
+                                  },
                                   "version": {
                                     "type": "string"
                                   }
@@ -8553,6 +8616,9 @@
                                       "type": "string"
                                     },
                                     "nameSuffix": {
+                                      "type": "string"
+                                    },
+                                    "namespace": {
                                       "type": "string"
                                     },
                                     "version": {
@@ -9074,6 +9140,9 @@
                                             "nameSuffix": {
                                               "type": "string"
                                             },
+                                            "namespace": {
+                                              "type": "string"
+                                            },
                                             "version": {
                                               "type": "string"
                                             }
@@ -9325,6 +9394,9 @@
                                                 "type": "string"
                                               },
                                               "nameSuffix": {
+                                                "type": "string"
+                                              },
+                                              "namespace": {
                                                 "type": "string"
                                               },
                                               "version": {
@@ -9837,6 +9909,9 @@
                                             "nameSuffix": {
                                               "type": "string"
                                             },
+                                            "namespace": {
+                                              "type": "string"
+                                            },
                                             "version": {
                                               "type": "string"
                                             }
@@ -10088,6 +10163,9 @@
                                                 "type": "string"
                                               },
                                               "nameSuffix": {
+                                                "type": "string"
+                                              },
+                                              "namespace": {
                                                 "type": "string"
                                               },
                                               "version": {
@@ -10606,6 +10684,9 @@
                                             "nameSuffix": {
                                               "type": "string"
                                             },
+                                            "namespace": {
+                                              "type": "string"
+                                            },
                                             "version": {
                                               "type": "string"
                                             }
@@ -10857,6 +10938,9 @@
                                                 "type": "string"
                                               },
                                               "nameSuffix": {
+                                                "type": "string"
+                                              },
+                                              "namespace": {
                                                 "type": "string"
                                               },
                                               "version": {
@@ -11333,6 +11417,9 @@
                                             "nameSuffix": {
                                               "type": "string"
                                             },
+                                            "namespace": {
+                                              "type": "string"
+                                            },
                                             "version": {
                                               "type": "string"
                                             }
@@ -11584,6 +11671,9 @@
                                                 "type": "string"
                                               },
                                               "nameSuffix": {
+                                                "type": "string"
+                                              },
+                                              "namespace": {
                                                 "type": "string"
                                               },
                                               "version": {
@@ -12247,6 +12337,9 @@
                                             "nameSuffix": {
                                               "type": "string"
                                             },
+                                            "namespace": {
+                                              "type": "string"
+                                            },
                                             "version": {
                                               "type": "string"
                                             }
@@ -12498,6 +12591,9 @@
                                                 "type": "string"
                                               },
                                               "nameSuffix": {
+                                                "type": "string"
+                                              },
+                                              "namespace": {
                                                 "type": "string"
                                               },
                                               "version": {
@@ -13236,6 +13332,9 @@
                                             "nameSuffix": {
                                               "type": "string"
                                             },
+                                            "namespace": {
+                                              "type": "string"
+                                            },
                                             "version": {
                                               "type": "string"
                                             }
@@ -13487,6 +13586,9 @@
                                                 "type": "string"
                                               },
                                               "nameSuffix": {
+                                                "type": "string"
+                                              },
+                                              "namespace": {
                                                 "type": "string"
                                               },
                                               "version": {
@@ -14000,6 +14102,9 @@
                                   "nameSuffix": {
                                     "type": "string"
                                   },
+                                  "namespace": {
+                                    "type": "string"
+                                  },
                                   "version": {
                                     "type": "string"
                                   }
@@ -14251,6 +14356,9 @@
                                       "type": "string"
                                     },
                                     "nameSuffix": {
+                                      "type": "string"
+                                    },
+                                    "namespace": {
                                       "type": "string"
                                     },
                                     "version": {
@@ -14909,6 +15017,9 @@
                                   "nameSuffix": {
                                     "type": "string"
                                   },
+                                  "namespace": {
+                                    "type": "string"
+                                  },
                                   "version": {
                                     "type": "string"
                                   }
@@ -15160,6 +15271,9 @@
                                       "type": "string"
                                     },
                                     "nameSuffix": {
+                                      "type": "string"
+                                    },
+                                    "namespace": {
                                       "type": "string"
                                     },
                                     "version": {
@@ -15898,6 +16012,9 @@
                                   "nameSuffix": {
                                     "type": "string"
                                   },
+                                  "namespace": {
+                                    "type": "string"
+                                  },
                                   "version": {
                                     "type": "string"
                                   }
@@ -16151,6 +16268,9 @@
                                     "nameSuffix": {
                                       "type": "string"
                                     },
+                                    "namespace": {
+                                      "type": "string"
+                                    },
                                     "version": {
                                       "type": "string"
                                     }
@@ -16370,6 +16490,18 @@
         },
         "goTemplate": {
           "type": "boolean"
+        },
+        "preservedFields": {
+          "properties": {
+            "annotations": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "type": "object",
+          "additionalProperties": false
         },
         "strategy": {
           "properties": {
@@ -16724,6 +16856,9 @@
                         "nameSuffix": {
                           "type": "string"
                         },
+                        "namespace": {
+                          "type": "string"
+                        },
                         "version": {
                           "type": "string"
                         }
@@ -16975,6 +17110,9 @@
                             "type": "string"
                           },
                           "nameSuffix": {
+                            "type": "string"
+                          },
+                          "namespace": {
                             "type": "string"
                           },
                           "version": {
