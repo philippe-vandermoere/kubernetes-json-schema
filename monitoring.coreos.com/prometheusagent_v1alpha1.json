@@ -3349,6 +3349,35 @@
                 "type": "object",
                 "additionalProperties": false
               },
+              "azureAd": {
+                "properties": {
+                  "cloud": {
+                    "enum": [
+                      "AzureChina",
+                      "AzureGovernment",
+                      "AzurePublic"
+                    ],
+                    "type": "string"
+                  },
+                  "managedIdentity": {
+                    "properties": {
+                      "clientId": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "clientId"
+                    ],
+                    "type": "object",
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "managedIdentity"
+                ],
+                "type": "object",
+                "additionalProperties": false
+              },
               "basicAuth": {
                 "properties": {
                   "password": {
