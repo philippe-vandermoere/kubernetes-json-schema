@@ -297,10 +297,6 @@
             "namespace": {
               "description": "Namespace specifies resource namespace.",
               "type": "string"
-            },
-            "uid": {
-              "description": "UID specifies the resource uid.",
-              "type": "string"
             }
           },
           "type": "object",
@@ -347,10 +343,6 @@
               "namespace": {
                 "description": "Namespace specifies resource namespace.",
                 "type": "string"
-              },
-              "uid": {
-                "description": "UID specifies the resource uid.",
-                "type": "string"
               }
             },
             "type": "object",
@@ -359,7 +351,7 @@
           "type": "array"
         },
         "handler": {
-          "description": "Deprecated",
+          "description": "Handler represents the instance ID that handles the UR Deprecated",
           "type": "string"
         },
         "message": {
