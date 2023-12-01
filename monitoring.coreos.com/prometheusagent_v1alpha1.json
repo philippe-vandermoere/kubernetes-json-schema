@@ -3126,6 +3126,18 @@
         "paused": {
           "type": "boolean"
         },
+        "persistentVolumeClaimRetentionPolicy": {
+          "properties": {
+            "whenDeleted": {
+              "type": "string"
+            },
+            "whenScaled": {
+              "type": "string"
+            }
+          },
+          "type": "object",
+          "additionalProperties": false
+        },
         "podMetadata": {
           "properties": {
             "annotations": {
@@ -3315,6 +3327,13 @@
         "prometheusExternalLabelName": {
           "type": "string"
         },
+        "reloadStrategy": {
+          "enum": [
+            "HTTP",
+            "ProcessSignal"
+          ],
+          "type": "string"
+        },
         "remoteWrite": {
           "items": {
             "properties": {
@@ -3370,11 +3389,47 @@
                     ],
                     "type": "object",
                     "additionalProperties": false
+                  },
+                  "oauth": {
+                    "properties": {
+                      "clientId": {
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "clientSecret": {
+                        "properties": {
+                          "key": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "optional": {
+                            "type": "boolean"
+                          }
+                        },
+                        "required": [
+                          "key"
+                        ],
+                        "type": "object",
+                        "x-kubernetes-map-type": "atomic",
+                        "additionalProperties": false
+                      },
+                      "tenantId": {
+                        "minLength": 1,
+                        "pattern": "^[0-9a-zA-Z-.]+$",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "clientId",
+                      "clientSecret",
+                      "tenantId"
+                    ],
+                    "type": "object",
+                    "additionalProperties": false
                   }
                 },
-                "required": [
-                  "managedIdentity"
-                ],
                 "type": "object",
                 "additionalProperties": false
               },
