@@ -844,7 +844,7 @@
                               "type": "string"
                             },
                             "insecureSkipVerify": {
-                              "description": "InsecureSkipVerify specifies whether the proxy should skip verifying the CA signature and SAN for the server certificate corresponding to the host.",
+                              "description": "`insecureSkipVerify` specifies whether the proxy should skip verifying the CA signature and SAN for the server certificate corresponding to the host.",
                               "nullable": true,
                               "type": "boolean"
                             },
@@ -899,7 +899,7 @@
                         "type": "string"
                       },
                       "insecureSkipVerify": {
-                        "description": "InsecureSkipVerify specifies whether the proxy should skip verifying the CA signature and SAN for the server certificate corresponding to the host.",
+                        "description": "`insecureSkipVerify` specifies whether the proxy should skip verifying the CA signature and SAN for the server certificate corresponding to the host.",
                         "nullable": true,
                         "type": "boolean"
                       },
@@ -1783,7 +1783,7 @@
                         "type": "string"
                       },
                       "insecureSkipVerify": {
-                        "description": "InsecureSkipVerify specifies whether the proxy should skip verifying the CA signature and SAN for the server certificate corresponding to the host.",
+                        "description": "`insecureSkipVerify` specifies whether the proxy should skip verifying the CA signature and SAN for the server certificate corresponding to the host.",
                         "nullable": true,
                         "type": "boolean"
                       },
@@ -1838,7 +1838,7 @@
                   "type": "string"
                 },
                 "insecureSkipVerify": {
-                  "description": "InsecureSkipVerify specifies whether the proxy should skip verifying the CA signature and SAN for the server certificate corresponding to the host.",
+                  "description": "`insecureSkipVerify` specifies whether the proxy should skip verifying the CA signature and SAN for the server certificate corresponding to the host.",
                   "nullable": true,
                   "type": "boolean"
                 },
