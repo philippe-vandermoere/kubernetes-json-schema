@@ -7,7 +7,6 @@
           "additionalProperties": {
             "type": "string"
           },
-          "description": "One or more labels that indicate a specific set of pods/VMs on which this gateway configuration should be applied.",
           "type": "object"
         },
         "servers": {
@@ -15,7 +14,6 @@
           "items": {
             "properties": {
               "bind": {
-                "description": "The ip or the Unix domain socket to which the listener should be bound to.",
                 "type": "string"
               },
               "defaultEndpoint": {
@@ -33,7 +31,6 @@
                 "type": "string"
               },
               "port": {
-                "description": "The Port on which the proxy should listen for incoming connections.",
                 "properties": {
                   "name": {
                     "description": "Label assigned to the port.",
@@ -51,11 +48,6 @@
                     "type": "integer"
                   }
                 },
-                "required": [
-                  "number",
-                  "protocol",
-                  "name"
-                ],
                 "type": "object",
                 "additionalProperties": false
               },
@@ -63,7 +55,7 @@
                 "description": "Set of TLS related options that govern the server's behavior.",
                 "properties": {
                   "caCertificates": {
-                    "description": "REQUIRED if mode is `MUTUAL` or `OPTIONAL_MUTUAL`.",
+                    "description": "REQUIRED if mode is `MUTUAL`.",
                     "type": "string"
                   },
                   "cipherSuites": {
@@ -74,11 +66,9 @@
                     "type": "array"
                   },
                   "credentialName": {
-                    "description": "For gateways running on Kubernetes, the name of the secret that holds the TLS certs including the CA certificates.",
                     "type": "string"
                   },
                   "httpsRedirect": {
-                    "description": "If set to true, the load balancer will send a 301 redirect for all http connections, asking the clients to use HTTPS.",
                     "type": "boolean"
                   },
                   "maxProtocolVersion": {
@@ -104,14 +94,12 @@
                     "type": "string"
                   },
                   "mode": {
-                    "description": "Optional: Indicates whether connections to this port should be secured using TLS.",
                     "enum": [
                       "PASSTHROUGH",
                       "SIMPLE",
                       "MUTUAL",
                       "AUTO_PASSTHROUGH",
-                      "ISTIO_MUTUAL",
-                      "OPTIONAL_MUTUAL"
+                      "ISTIO_MUTUAL"
                     ],
                     "type": "string"
                   },
@@ -124,21 +112,18 @@
                     "type": "string"
                   },
                   "subjectAltNames": {
-                    "description": "A list of alternate names to verify the subject identity in the certificate presented by the client.",
                     "items": {
                       "type": "string"
                     },
                     "type": "array"
                   },
                   "verifyCertificateHash": {
-                    "description": "An optional list of hex-encoded SHA-256 hashes of the authorized client certificates.",
                     "items": {
                       "type": "string"
                     },
                     "type": "array"
                   },
                   "verifyCertificateSpki": {
-                    "description": "An optional list of base64-encoded SHA-256 hashes of the SPKIs of authorized client certificates.",
                     "items": {
                       "type": "string"
                     },
@@ -149,10 +134,6 @@
                 "additionalProperties": false
               }
             },
-            "required": [
-              "port",
-              "hosts"
-            ],
             "type": "object",
             "additionalProperties": false
           },
