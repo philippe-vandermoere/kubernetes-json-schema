@@ -332,13 +332,6 @@
                       "description": "CommonLabels is a list of additional labels to add to rendered manifests",
                       "type": "object"
                     },
-                    "components": {
-                      "description": "Components specifies a list of kustomize components to add to the kustomization before building",
-                      "items": {
-                        "type": "string"
-                      },
-                      "type": "array"
-                    },
                     "forceCommonAnnotations": {
                       "description": "ForceCommonAnnotations specifies whether to force applying common annotations to resources for Kustomize apps",
                       "type": "boolean"
@@ -366,55 +359,6 @@
                     "namespace": {
                       "description": "Namespace sets the namespace that Kustomize adds to all resources",
                       "type": "string"
-                    },
-                    "patches": {
-                      "description": "Patches is a list of Kustomize patches",
-                      "items": {
-                        "properties": {
-                          "options": {
-                            "additionalProperties": {
-                              "type": "boolean"
-                            },
-                            "type": "object"
-                          },
-                          "patch": {
-                            "type": "string"
-                          },
-                          "path": {
-                            "type": "string"
-                          },
-                          "target": {
-                            "properties": {
-                              "annotationSelector": {
-                                "type": "string"
-                              },
-                              "group": {
-                                "type": "string"
-                              },
-                              "kind": {
-                                "type": "string"
-                              },
-                              "labelSelector": {
-                                "type": "string"
-                              },
-                              "name": {
-                                "type": "string"
-                              },
-                              "namespace": {
-                                "type": "string"
-                              },
-                              "version": {
-                                "type": "string"
-                              }
-                            },
-                            "type": "object",
-                            "additionalProperties": false
-                          }
-                        },
-                        "type": "object",
-                        "additionalProperties": false
-                      },
-                      "type": "array"
                     },
                     "replicas": {
                       "description": "Replicas is a list of Kustomize Replicas override specifications",
@@ -737,13 +681,6 @@
                         "description": "CommonLabels is a list of additional labels to add to rendered manifests",
                         "type": "object"
                       },
-                      "components": {
-                        "description": "Components specifies a list of kustomize components to add to the kustomization before building",
-                        "items": {
-                          "type": "string"
-                        },
-                        "type": "array"
-                      },
                       "forceCommonAnnotations": {
                         "description": "ForceCommonAnnotations specifies whether to force applying common annotations to resources for Kustomize apps",
                         "type": "boolean"
@@ -771,55 +708,6 @@
                       "namespace": {
                         "description": "Namespace sets the namespace that Kustomize adds to all resources",
                         "type": "string"
-                      },
-                      "patches": {
-                        "description": "Patches is a list of Kustomize patches",
-                        "items": {
-                          "properties": {
-                            "options": {
-                              "additionalProperties": {
-                                "type": "boolean"
-                              },
-                              "type": "object"
-                            },
-                            "patch": {
-                              "type": "string"
-                            },
-                            "path": {
-                              "type": "string"
-                            },
-                            "target": {
-                              "properties": {
-                                "annotationSelector": {
-                                  "type": "string"
-                                },
-                                "group": {
-                                  "type": "string"
-                                },
-                                "kind": {
-                                  "type": "string"
-                                },
-                                "labelSelector": {
-                                  "type": "string"
-                                },
-                                "name": {
-                                  "type": "string"
-                                },
-                                "namespace": {
-                                  "type": "string"
-                                },
-                                "version": {
-                                  "type": "string"
-                                }
-                              },
-                              "type": "object",
-                              "additionalProperties": false
-                            }
-                          },
-                          "type": "object",
-                          "additionalProperties": false
-                        },
-                        "type": "array"
                       },
                       "replicas": {
                         "description": "Replicas is a list of Kustomize Replicas override specifications",
@@ -999,7 +887,7 @@
           "description": "Destination is a reference to the target Kubernetes server and namespace",
           "properties": {
             "name": {
-              "description": "Name is an alternate way of specifying the target cluster by its symbolic name. This must be set if Server is not set.",
+              "description": "Name is an alternate way of specifying the target cluster by its symbolic name",
               "type": "string"
             },
             "namespace": {
@@ -1007,7 +895,7 @@
               "type": "string"
             },
             "server": {
-              "description": "Server specifies the URL of the target cluster's Kubernetes control plane API. This must be set if Name is not set.",
+              "description": "Server specifies the URL of the target cluster and must be set to the Kubernetes control plane API",
               "type": "string"
             }
           },
@@ -1282,13 +1170,6 @@
                   "description": "CommonLabels is a list of additional labels to add to rendered manifests",
                   "type": "object"
                 },
-                "components": {
-                  "description": "Components specifies a list of kustomize components to add to the kustomization before building",
-                  "items": {
-                    "type": "string"
-                  },
-                  "type": "array"
-                },
                 "forceCommonAnnotations": {
                   "description": "ForceCommonAnnotations specifies whether to force applying common annotations to resources for Kustomize apps",
                   "type": "boolean"
@@ -1316,55 +1197,6 @@
                 "namespace": {
                   "description": "Namespace sets the namespace that Kustomize adds to all resources",
                   "type": "string"
-                },
-                "patches": {
-                  "description": "Patches is a list of Kustomize patches",
-                  "items": {
-                    "properties": {
-                      "options": {
-                        "additionalProperties": {
-                          "type": "boolean"
-                        },
-                        "type": "object"
-                      },
-                      "patch": {
-                        "type": "string"
-                      },
-                      "path": {
-                        "type": "string"
-                      },
-                      "target": {
-                        "properties": {
-                          "annotationSelector": {
-                            "type": "string"
-                          },
-                          "group": {
-                            "type": "string"
-                          },
-                          "kind": {
-                            "type": "string"
-                          },
-                          "labelSelector": {
-                            "type": "string"
-                          },
-                          "name": {
-                            "type": "string"
-                          },
-                          "namespace": {
-                            "type": "string"
-                          },
-                          "version": {
-                            "type": "string"
-                          }
-                        },
-                        "type": "object",
-                        "additionalProperties": false
-                      }
-                    },
-                    "type": "object",
-                    "additionalProperties": false
-                  },
-                  "type": "array"
                 },
                 "replicas": {
                   "description": "Replicas is a list of Kustomize Replicas override specifications",
@@ -1687,13 +1519,6 @@
                     "description": "CommonLabels is a list of additional labels to add to rendered manifests",
                     "type": "object"
                   },
-                  "components": {
-                    "description": "Components specifies a list of kustomize components to add to the kustomization before building",
-                    "items": {
-                      "type": "string"
-                    },
-                    "type": "array"
-                  },
                   "forceCommonAnnotations": {
                     "description": "ForceCommonAnnotations specifies whether to force applying common annotations to resources for Kustomize apps",
                     "type": "boolean"
@@ -1721,55 +1546,6 @@
                   "namespace": {
                     "description": "Namespace sets the namespace that Kustomize adds to all resources",
                     "type": "string"
-                  },
-                  "patches": {
-                    "description": "Patches is a list of Kustomize patches",
-                    "items": {
-                      "properties": {
-                        "options": {
-                          "additionalProperties": {
-                            "type": "boolean"
-                          },
-                          "type": "object"
-                        },
-                        "patch": {
-                          "type": "string"
-                        },
-                        "path": {
-                          "type": "string"
-                        },
-                        "target": {
-                          "properties": {
-                            "annotationSelector": {
-                              "type": "string"
-                            },
-                            "group": {
-                              "type": "string"
-                            },
-                            "kind": {
-                              "type": "string"
-                            },
-                            "labelSelector": {
-                              "type": "string"
-                            },
-                            "name": {
-                              "type": "string"
-                            },
-                            "namespace": {
-                              "type": "string"
-                            },
-                            "version": {
-                              "type": "string"
-                            }
-                          },
-                          "type": "object",
-                          "additionalProperties": false
-                        }
-                      },
-                      "type": "object",
-                      "additionalProperties": false
-                    },
-                    "type": "array"
                   },
                   "replicas": {
                     "description": "Replicas is a list of Kustomize Replicas override specifications",
@@ -2265,13 +2041,6 @@
                         "description": "CommonLabels is a list of additional labels to add to rendered manifests",
                         "type": "object"
                       },
-                      "components": {
-                        "description": "Components specifies a list of kustomize components to add to the kustomization before building",
-                        "items": {
-                          "type": "string"
-                        },
-                        "type": "array"
-                      },
                       "forceCommonAnnotations": {
                         "description": "ForceCommonAnnotations specifies whether to force applying common annotations to resources for Kustomize apps",
                         "type": "boolean"
@@ -2299,55 +2068,6 @@
                       "namespace": {
                         "description": "Namespace sets the namespace that Kustomize adds to all resources",
                         "type": "string"
-                      },
-                      "patches": {
-                        "description": "Patches is a list of Kustomize patches",
-                        "items": {
-                          "properties": {
-                            "options": {
-                              "additionalProperties": {
-                                "type": "boolean"
-                              },
-                              "type": "object"
-                            },
-                            "patch": {
-                              "type": "string"
-                            },
-                            "path": {
-                              "type": "string"
-                            },
-                            "target": {
-                              "properties": {
-                                "annotationSelector": {
-                                  "type": "string"
-                                },
-                                "group": {
-                                  "type": "string"
-                                },
-                                "kind": {
-                                  "type": "string"
-                                },
-                                "labelSelector": {
-                                  "type": "string"
-                                },
-                                "name": {
-                                  "type": "string"
-                                },
-                                "namespace": {
-                                  "type": "string"
-                                },
-                                "version": {
-                                  "type": "string"
-                                }
-                              },
-                              "type": "object",
-                              "additionalProperties": false
-                            }
-                          },
-                          "type": "object",
-                          "additionalProperties": false
-                        },
-                        "type": "array"
                       },
                       "replicas": {
                         "description": "Replicas is a list of Kustomize Replicas override specifications",
@@ -2670,13 +2390,6 @@
                           "description": "CommonLabels is a list of additional labels to add to rendered manifests",
                           "type": "object"
                         },
-                        "components": {
-                          "description": "Components specifies a list of kustomize components to add to the kustomization before building",
-                          "items": {
-                            "type": "string"
-                          },
-                          "type": "array"
-                        },
                         "forceCommonAnnotations": {
                           "description": "ForceCommonAnnotations specifies whether to force applying common annotations to resources for Kustomize apps",
                           "type": "boolean"
@@ -2704,55 +2417,6 @@
                         "namespace": {
                           "description": "Namespace sets the namespace that Kustomize adds to all resources",
                           "type": "string"
-                        },
-                        "patches": {
-                          "description": "Patches is a list of Kustomize patches",
-                          "items": {
-                            "properties": {
-                              "options": {
-                                "additionalProperties": {
-                                  "type": "boolean"
-                                },
-                                "type": "object"
-                              },
-                              "patch": {
-                                "type": "string"
-                              },
-                              "path": {
-                                "type": "string"
-                              },
-                              "target": {
-                                "properties": {
-                                  "annotationSelector": {
-                                    "type": "string"
-                                  },
-                                  "group": {
-                                    "type": "string"
-                                  },
-                                  "kind": {
-                                    "type": "string"
-                                  },
-                                  "labelSelector": {
-                                    "type": "string"
-                                  },
-                                  "name": {
-                                    "type": "string"
-                                  },
-                                  "namespace": {
-                                    "type": "string"
-                                  },
-                                  "version": {
-                                    "type": "string"
-                                  }
-                                },
-                                "type": "object",
-                                "additionalProperties": false
-                              }
-                            },
-                            "type": "object",
-                            "additionalProperties": false
-                          },
-                          "type": "array"
                         },
                         "replicas": {
                           "description": "Replicas is a list of Kustomize Replicas override specifications",
@@ -3228,13 +2892,6 @@
                               "description": "CommonLabels is a list of additional labels to add to rendered manifests",
                               "type": "object"
                             },
-                            "components": {
-                              "description": "Components specifies a list of kustomize components to add to the kustomization before building",
-                              "items": {
-                                "type": "string"
-                              },
-                              "type": "array"
-                            },
                             "forceCommonAnnotations": {
                               "description": "ForceCommonAnnotations specifies whether to force applying common annotations to resources for Kustomize apps",
                               "type": "boolean"
@@ -3262,55 +2919,6 @@
                             "namespace": {
                               "description": "Namespace sets the namespace that Kustomize adds to all resources",
                               "type": "string"
-                            },
-                            "patches": {
-                              "description": "Patches is a list of Kustomize patches",
-                              "items": {
-                                "properties": {
-                                  "options": {
-                                    "additionalProperties": {
-                                      "type": "boolean"
-                                    },
-                                    "type": "object"
-                                  },
-                                  "patch": {
-                                    "type": "string"
-                                  },
-                                  "path": {
-                                    "type": "string"
-                                  },
-                                  "target": {
-                                    "properties": {
-                                      "annotationSelector": {
-                                        "type": "string"
-                                      },
-                                      "group": {
-                                        "type": "string"
-                                      },
-                                      "kind": {
-                                        "type": "string"
-                                      },
-                                      "labelSelector": {
-                                        "type": "string"
-                                      },
-                                      "name": {
-                                        "type": "string"
-                                      },
-                                      "namespace": {
-                                        "type": "string"
-                                      },
-                                      "version": {
-                                        "type": "string"
-                                      }
-                                    },
-                                    "type": "object",
-                                    "additionalProperties": false
-                                  }
-                                },
-                                "type": "object",
-                                "additionalProperties": false
-                              },
-                              "type": "array"
                             },
                             "replicas": {
                               "description": "Replicas is a list of Kustomize Replicas override specifications",
@@ -3633,13 +3241,6 @@
                                 "description": "CommonLabels is a list of additional labels to add to rendered manifests",
                                 "type": "object"
                               },
-                              "components": {
-                                "description": "Components specifies a list of kustomize components to add to the kustomization before building",
-                                "items": {
-                                  "type": "string"
-                                },
-                                "type": "array"
-                              },
                               "forceCommonAnnotations": {
                                 "description": "ForceCommonAnnotations specifies whether to force applying common annotations to resources for Kustomize apps",
                                 "type": "boolean"
@@ -3667,55 +3268,6 @@
                               "namespace": {
                                 "description": "Namespace sets the namespace that Kustomize adds to all resources",
                                 "type": "string"
-                              },
-                              "patches": {
-                                "description": "Patches is a list of Kustomize patches",
-                                "items": {
-                                  "properties": {
-                                    "options": {
-                                      "additionalProperties": {
-                                        "type": "boolean"
-                                      },
-                                      "type": "object"
-                                    },
-                                    "patch": {
-                                      "type": "string"
-                                    },
-                                    "path": {
-                                      "type": "string"
-                                    },
-                                    "target": {
-                                      "properties": {
-                                        "annotationSelector": {
-                                          "type": "string"
-                                        },
-                                        "group": {
-                                          "type": "string"
-                                        },
-                                        "kind": {
-                                          "type": "string"
-                                        },
-                                        "labelSelector": {
-                                          "type": "string"
-                                        },
-                                        "name": {
-                                          "type": "string"
-                                        },
-                                        "namespace": {
-                                          "type": "string"
-                                        },
-                                        "version": {
-                                          "type": "string"
-                                        }
-                                      },
-                                      "type": "object",
-                                      "additionalProperties": false
-                                    }
-                                  },
-                                  "type": "object",
-                                  "additionalProperties": false
-                                },
-                                "type": "array"
                               },
                               "replicas": {
                                 "description": "Replicas is a list of Kustomize Replicas override specifications",
@@ -4187,13 +3739,6 @@
                           "description": "CommonLabels is a list of additional labels to add to rendered manifests",
                           "type": "object"
                         },
-                        "components": {
-                          "description": "Components specifies a list of kustomize components to add to the kustomization before building",
-                          "items": {
-                            "type": "string"
-                          },
-                          "type": "array"
-                        },
                         "forceCommonAnnotations": {
                           "description": "ForceCommonAnnotations specifies whether to force applying common annotations to resources for Kustomize apps",
                           "type": "boolean"
@@ -4221,55 +3766,6 @@
                         "namespace": {
                           "description": "Namespace sets the namespace that Kustomize adds to all resources",
                           "type": "string"
-                        },
-                        "patches": {
-                          "description": "Patches is a list of Kustomize patches",
-                          "items": {
-                            "properties": {
-                              "options": {
-                                "additionalProperties": {
-                                  "type": "boolean"
-                                },
-                                "type": "object"
-                              },
-                              "patch": {
-                                "type": "string"
-                              },
-                              "path": {
-                                "type": "string"
-                              },
-                              "target": {
-                                "properties": {
-                                  "annotationSelector": {
-                                    "type": "string"
-                                  },
-                                  "group": {
-                                    "type": "string"
-                                  },
-                                  "kind": {
-                                    "type": "string"
-                                  },
-                                  "labelSelector": {
-                                    "type": "string"
-                                  },
-                                  "name": {
-                                    "type": "string"
-                                  },
-                                  "namespace": {
-                                    "type": "string"
-                                  },
-                                  "version": {
-                                    "type": "string"
-                                  }
-                                },
-                                "type": "object",
-                                "additionalProperties": false
-                              }
-                            },
-                            "type": "object",
-                            "additionalProperties": false
-                          },
-                          "type": "array"
                         },
                         "replicas": {
                           "description": "Replicas is a list of Kustomize Replicas override specifications",
@@ -4592,13 +4088,6 @@
                             "description": "CommonLabels is a list of additional labels to add to rendered manifests",
                             "type": "object"
                           },
-                          "components": {
-                            "description": "Components specifies a list of kustomize components to add to the kustomization before building",
-                            "items": {
-                              "type": "string"
-                            },
-                            "type": "array"
-                          },
                           "forceCommonAnnotations": {
                             "description": "ForceCommonAnnotations specifies whether to force applying common annotations to resources for Kustomize apps",
                             "type": "boolean"
@@ -4626,55 +4115,6 @@
                           "namespace": {
                             "description": "Namespace sets the namespace that Kustomize adds to all resources",
                             "type": "string"
-                          },
-                          "patches": {
-                            "description": "Patches is a list of Kustomize patches",
-                            "items": {
-                              "properties": {
-                                "options": {
-                                  "additionalProperties": {
-                                    "type": "boolean"
-                                  },
-                                  "type": "object"
-                                },
-                                "patch": {
-                                  "type": "string"
-                                },
-                                "path": {
-                                  "type": "string"
-                                },
-                                "target": {
-                                  "properties": {
-                                    "annotationSelector": {
-                                      "type": "string"
-                                    },
-                                    "group": {
-                                      "type": "string"
-                                    },
-                                    "kind": {
-                                      "type": "string"
-                                    },
-                                    "labelSelector": {
-                                      "type": "string"
-                                    },
-                                    "name": {
-                                      "type": "string"
-                                    },
-                                    "namespace": {
-                                      "type": "string"
-                                    },
-                                    "version": {
-                                      "type": "string"
-                                    }
-                                  },
-                                  "type": "object",
-                                  "additionalProperties": false
-                                }
-                              },
-                              "type": "object",
-                              "additionalProperties": false
-                            },
-                            "type": "array"
                           },
                           "replicas": {
                             "description": "Replicas is a list of Kustomize Replicas override specifications",
@@ -4926,7 +4366,7 @@
                   "description": "Destination is a reference to the application's destination used for comparison",
                   "properties": {
                     "name": {
-                      "description": "Name is an alternate way of specifying the target cluster by its symbolic name. This must be set if Server is not set.",
+                      "description": "Name is an alternate way of specifying the target cluster by its symbolic name",
                       "type": "string"
                     },
                     "namespace": {
@@ -4934,7 +4374,7 @@
                       "type": "string"
                     },
                     "server": {
-                      "description": "Server specifies the URL of the target cluster's Kubernetes control plane API. This must be set if Name is not set.",
+                      "description": "Server specifies the URL of the target cluster and must be set to the Kubernetes control plane API",
                       "type": "string"
                     }
                   },
@@ -5180,13 +4620,6 @@
                           "description": "CommonLabels is a list of additional labels to add to rendered manifests",
                           "type": "object"
                         },
-                        "components": {
-                          "description": "Components specifies a list of kustomize components to add to the kustomization before building",
-                          "items": {
-                            "type": "string"
-                          },
-                          "type": "array"
-                        },
                         "forceCommonAnnotations": {
                           "description": "ForceCommonAnnotations specifies whether to force applying common annotations to resources for Kustomize apps",
                           "type": "boolean"
@@ -5214,55 +4647,6 @@
                         "namespace": {
                           "description": "Namespace sets the namespace that Kustomize adds to all resources",
                           "type": "string"
-                        },
-                        "patches": {
-                          "description": "Patches is a list of Kustomize patches",
-                          "items": {
-                            "properties": {
-                              "options": {
-                                "additionalProperties": {
-                                  "type": "boolean"
-                                },
-                                "type": "object"
-                              },
-                              "patch": {
-                                "type": "string"
-                              },
-                              "path": {
-                                "type": "string"
-                              },
-                              "target": {
-                                "properties": {
-                                  "annotationSelector": {
-                                    "type": "string"
-                                  },
-                                  "group": {
-                                    "type": "string"
-                                  },
-                                  "kind": {
-                                    "type": "string"
-                                  },
-                                  "labelSelector": {
-                                    "type": "string"
-                                  },
-                                  "name": {
-                                    "type": "string"
-                                  },
-                                  "namespace": {
-                                    "type": "string"
-                                  },
-                                  "version": {
-                                    "type": "string"
-                                  }
-                                },
-                                "type": "object",
-                                "additionalProperties": false
-                              }
-                            },
-                            "type": "object",
-                            "additionalProperties": false
-                          },
-                          "type": "array"
                         },
                         "replicas": {
                           "description": "Replicas is a list of Kustomize Replicas override specifications",
@@ -5585,13 +4969,6 @@
                             "description": "CommonLabels is a list of additional labels to add to rendered manifests",
                             "type": "object"
                           },
-                          "components": {
-                            "description": "Components specifies a list of kustomize components to add to the kustomization before building",
-                            "items": {
-                              "type": "string"
-                            },
-                            "type": "array"
-                          },
                           "forceCommonAnnotations": {
                             "description": "ForceCommonAnnotations specifies whether to force applying common annotations to resources for Kustomize apps",
                             "type": "boolean"
@@ -5619,55 +4996,6 @@
                           "namespace": {
                             "description": "Namespace sets the namespace that Kustomize adds to all resources",
                             "type": "string"
-                          },
-                          "patches": {
-                            "description": "Patches is a list of Kustomize patches",
-                            "items": {
-                              "properties": {
-                                "options": {
-                                  "additionalProperties": {
-                                    "type": "boolean"
-                                  },
-                                  "type": "object"
-                                },
-                                "patch": {
-                                  "type": "string"
-                                },
-                                "path": {
-                                  "type": "string"
-                                },
-                                "target": {
-                                  "properties": {
-                                    "annotationSelector": {
-                                      "type": "string"
-                                    },
-                                    "group": {
-                                      "type": "string"
-                                    },
-                                    "kind": {
-                                      "type": "string"
-                                    },
-                                    "labelSelector": {
-                                      "type": "string"
-                                    },
-                                    "name": {
-                                      "type": "string"
-                                    },
-                                    "namespace": {
-                                      "type": "string"
-                                    },
-                                    "version": {
-                                      "type": "string"
-                                    }
-                                  },
-                                  "type": "object",
-                                  "additionalProperties": false
-                                }
-                              },
-                              "type": "object",
-                              "additionalProperties": false
-                            },
-                            "type": "array"
                           },
                           "replicas": {
                             "description": "Replicas is a list of Kustomize Replicas override specifications",
